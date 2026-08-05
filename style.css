@@ -75,7 +75,7 @@ footer {
 
 /* Solid border */
 hr.solid {
-  border-top: 3px solid var(--colour-1); /* https://www.w3schools.com/howto/howto_css_dividers.asp /*
+  border-top: 3px solid var(--colour-1); /* https://www.w3schools.com/howto/howto_css_dividers.asp /*/
 }
 
 /*technique from Kevin Powell*/
