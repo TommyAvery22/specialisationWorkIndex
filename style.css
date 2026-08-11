@@ -10,18 +10,19 @@
     /* https://lospec.com/palette-list/1bit-monitor-glow */
         --colour-1: #edede9;
         --colour-2: #050608;
+        --colour-3: #f28c26;
         --font-1: Helvetica, sans-serif;
 }
 
 /* this swaps the colour order to account for user's OS dark mode */
 /*!!!!!*/
 /*remember to update the colours here too to reflect the above changes*/
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --colour-1: #edede9;
         --colour-2: #050608;
     }
-}
+} */
 
 body {
     background-color: var(--colour-2);
@@ -86,9 +87,24 @@ footer {
     margin-block-start: 3rem;
 }
 
-/* Solid border */
-hr.solid {
-  border-top: 3px solid var(--colour-1); /* https://www.w3schools.com/howto/howto_css_dividers.asp /*/
+/* From W3 Schools*/
+/* https://www.w3schools.com/html/html_links_colors.asp */
+a:link {
+  color: var(--colour-3);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(102, 255, 0);
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /*technique from Kevin Powell*/
