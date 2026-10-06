@@ -114,6 +114,27 @@ a:hover {
     margin-block-start: var(--prose-flow, 1em);
 }
 
+table, th, td {
+    border: solid black 1px;
+    /*here i'm providing colour as a separate declaration because i'm using a custom property defined in my style.css */
+    /*writing it by itself with a fallback (the black declared in the original border value) means if it can't be found
+    something will still display*/
+    border-color: var(--colour-02);
+}
+
+table {
+    border-spacing: 0.25rem;
+}
+
+th, td {
+    padding: 0.5rem;
+}
+
+th {
+    background-color: var(--colour-02);
+    color: var(--colour-01);
+}
+
 /* breakpoints from Material Design Spec https://m3.material.io/foundations/layout/breakpoints/overview */
 /* while sometimes mobile first is recommended, as we will be focused on desktop, we will start there */
 
@@ -164,3 +185,4 @@ a:hover {
 @media (width < 600px) {
 
 }
+

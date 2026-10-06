@@ -25,9 +25,11 @@
         <h3>
             <a href="https://thomas-avery-parallel-prototypes.github.io/audioinstrument/">Prototype 1: Keyboard Split</a>
         </h3>
-        
         <p>The first prototype divides the controls the most obvious and straight forward way: splitting them 50/50, straight down the middle of the “controller.” The simple keyboard controller in a QWERTY layout has one player controlling the left side, and the other controlling the right. In other words, the mapping here allows players to play in parallel with one another because they each have an equal amount of control over the outputted sound. Of course, the issue with this is both players are likely to get in the way of one another because the divided controls are directly next to one another. I considered adding a buffer zone to prevent this but decided against this as it would reduce the number inputs and the division of keys would’ve been unequal.</p>
-        
+        <table>
+            <a href="./tables/mapping1.txt">Commit logs</a>
+        </table>
+
         <h3>
             <a href="https://tommy-avery-mapping-2.github.io/mapping-2/">Prototype 2: Mouse & Keyboard</a>
         </h3>
@@ -35,12 +37,18 @@
         <p>The second mapping prototype explores the separation of controls by mouse and keyboard.
 Player 1 plays the notes and can change the wave whereas player 2 can adjust the brightness and echo of the notes being played by moving their cursor around a concealed box. These variables change based on the cursor's position on the x/y axis. These inputs allow players to control different parts of the one sound output. 
 </p>
+        <table>
+            <a href="./tables/mapping2.txt">Commit logs</a>
+        </table>
         
         <h3>
             <a href="https://mapping-3.github.io/mapping-3/">Prototype 3: Conflict</a>
         </h3>
         <p>The third mapping prototype showcases how multiple sounds could work with and against one another. Each player has access to their own keyboard half – like prototype 1. However, some input combinations between the two players can conflict and affect the output. Player 1’s sound can make player 2’s wobble and player 2’s sound can make player 1’s ring. This opens up the potential for users to deliberately work against one another just for the fun of it. Though, in order to produce something satisfying, you need some knowledge of what notes work well together. </p>
-        
+        <table>
+            <a href="./tables/mapping3.txt">Commit logs</a>
+        </table>
+
         <h2>Information Design</h2>
         <p>The three information design prototypes explore a completely different idea for a multiplayer synthesiser: an instrument that is played in a sequence of short turns. The idea is that two players take turns to play a melody that combines to make one continuous composition.</p>
         <p>Unlike the previous prototypes, players aren’t playing together but instead, building off of one another's creation. Although this idea always requires one player to sit out – even just momentarily – players are able to work better with one another because they’re creating something based on a frame of reference (the previous turn). In other words, players have time to react to what their counterpart is playing.</p>
@@ -53,15 +61,25 @@ Player 1 plays the notes and can change the wave whereas player 2 can adjust the
     
         <p>The first prototype displays the turn duration through a countdown clock in conjunction with a metronome. I was somewhat questioning whether a countdown clock would be too distracting or out of the way whilst the user is playing keys and focusing on the on-screen keyboard.</p>
         
+        <table>
+            <a href="./tables/info1.txt">Commit logs</a>
+        </table>
+
         <h3>
             <a href="https://information-design-2.github.io/audioinstrument/">Prototype 2: Colour Transition</a>
         </h3>
         <p>The second prototype looks at replacing the countdown and metronome, and instead indicating the same information through a colour transition to signal the end of a turn. However, without the numbers present, this could be inaccessible to those with some forms of colour blindness. It’s also hard to judge the exact second a turn starts/ends.</p>
-        
+        <table>
+            <a href="./tables/info2.txt">Commit logs</a>
+        </table>
+
         <h3>
             <a href="https://information-design-3.github.io/information-design-3/">Prototype 3: Sound Feedback</a>
         </h3>
         <p>The final prototype has some more visual feedback to the way the instrument is played. The visual fading of the keys matches aims to allow the other player to continue playing from the previous melody once their turn begins.</p>
+        <table>
+            <a href="./tables/info3.txt">Commit logs</a>
+        </table>
         <p>
             <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=cTYy0b7NF0S01L2yS1Exa67IYEoLrg9MqRZlPbxb8pFUM0kwWjJTNkJONlpDMzBIVlY5U1ZLVjFMTS4u" target="_blank">User feedback Form</a>
         </p>
