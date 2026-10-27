@@ -186,3 +186,17 @@ th {
 
 }
 
+/*screenshots on the assignment 3 page, with a small caption underneath*/
+figure {
+    margin: 1.5rem 0;
+}
+
+figure img {
+    border-radius: 0.5rem;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
