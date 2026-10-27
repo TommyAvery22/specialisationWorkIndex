@@ -15,7 +15,17 @@
 </head>
 <body>
 
-    <main>
+    <div class="mainNavContainer">
+
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="https://au.miro.com/app/board/u3jVOf56cFI=/?share_link_id=185003670091" target="_blank">Community of practice</a>
+            <a href="./assignment1.html">Assignment 1</a>
+            <a href="./assignment2.html">Assignment 2</a>
+            <a href="./assignment3.html">Assignment 3</a>
+        </nav>
+
+        <main>
         <h1>Multiplayer Synthesiser</h1>
         <img src="./assets/images/synthesiser.png" alt="The multiplayer synthesiser mid-play. Blue's half of the keyboard is on the left and yellow's is on the right, with one key lit on each side and the distortion and wobble meters above both active." class="synthImage">
         <a href="https://instrument-final.github.io/audioinstrument-final/" target="_blank">Play Multiplayer Synthesiser</a>
@@ -24,7 +34,7 @@
         <p>This multiplayer synthesiser can be played by two people, sharing the same computer and keyboard. One player has control over the left half, the other controls the right, with each player affecting a variable that affects the musical output. The yellow player controls the sound's distortion whereas the blue player controls its wobble. In addition to this, each player can adjust their sound's brightness, wave type, and echo during play. The conflict comes from the other player's sound and how it affects the combined output. Sometimes the combined variables and keys being played produce a sound that's pleasing, other times they don't. Each player has to notice patterns with their partner's inputs so they can adjust theirs accordingly. The skill progression comes from trial-and-error. That's one of its flaws, it's not an easy instrument to pick-up. You need to have an understanding of what notes work together, be able to read the other player's actions whilst playing, know what tempo that should be played at any given moment, and when a variable should be adjusted.</p>
         <p>Another interactive feature comes from the sound feedback and how that influences how each player plays. Making the distortion and wobble variables distinct enough allowed each player an understanding in how they influence the combined output. Neither player can cooperate if they don't understand their control. Some of the feedback received in the user testing pointed to feelings of frustration or boredom when the other player had more control over them. The level of control between the two players is essentially equal so that each player feels as if they need the other as much as they are needed by them.</p>
 
-        <h2>Extended technique: live sound effects with Tone.js</h2>
+        <h2>Extended technique</h2>
         <p>With this instrument, each key press also changes the other player's sound in real time.</p>
         <ul>
             <li>When the blue player holds a note, yellow's sound starts to wobble. Different blue notes give a slower or faster wobble.</li>
@@ -60,7 +70,12 @@
             <figcaption>R is being held while S fades out after being let go.</figcaption>
         </figure>
         <p>There's also an influence meter above each control so it can be understood how the other player's inputs affect the sound. These are visually presented so they can be interpreted in each player's peripheral vision, so they don't have to take their eye off what's most important. Also, each of the variable control keys contain a symbol so users can identify their purpose more easily, without having to read any text.</p>
-    </main>
+        </main>
+
+        <!-- this is an empty element which helps with spacing -->
+        <aside></aside>
+
+    </div>
 
     <footer>
         <p>
