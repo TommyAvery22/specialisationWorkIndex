@@ -29,7 +29,6 @@
         <h1>Multiplayer Synthesiser</h1>
         <img src="./assets/images/synthesiser.png" alt="The multiplayer synthesiser mid-play. Blue's half of the keyboard is on the left and yellow's is on the right, with one key lit on each side and the distortion and wobble meters above both active." class="synthImage">
         <a href="https://instrument-final.github.io/audioinstrument-final/" target="_blank">Play Multiplayer Synthesiser</a>
-        <a href="./tables/final-instrument.txt">Commit logs</a>
 
         <h2>Core interactive features</h2>
         <p>This multiplayer synthesiser can be played by two people, sharing the same computer and keyboard. One player has control over the left half, the other controls the right, with each player affecting a variable that affects the musical output. The yellow player controls the sound's distortion whereas the blue player controls its wobble. In addition to this, each player can adjust their sound's brightness, wave type, and echo during play. The conflict comes from the other player's sound and how it affects the combined output. Sometimes the combined variables and keys being played produce a sound that's pleasing, other times they don't. Each player has to notice patterns with their partner's inputs so they can adjust theirs accordingly. The skill progression comes from trial-and-error. That's one of its flaws, it's not an easy instrument to pick-up. You need to have an understanding of what notes work together, be able to read the other player's actions whilst playing, know what tempo that should be played at any given moment, and when a variable should be adjusted.</p>
@@ -71,6 +70,810 @@
             <figcaption>R is being held while S fades out after being let go.</figcaption>
         </figure>
         <p>There's also an influence meter above each control so it can be understood how the other player's inputs affect the sound. These are visually presented so they can be interpreted in each player's peripheral vision, so they don't have to take their eye off what's most important. Also, each of the variable control keys contain a symbol so users can identify their purpose more easily, without having to read any text.</p>
+
+        <!-- the commit log is long, so it stays folded away until it's opened -->
+        <details class="commit-log" id="commit-log">
+            <summary>Commit log</summary>
+            <table>
+
+                <thead><tr>
+
+                    <th>Author</th>
+                    <th>Date</th>
+                    <th>Subject</th>
+                    <th>Body</th>
+
+                </tr></thead>
+
+                <tbody>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 16:20</td>
+                    <td>produced the git commit history as .csv file</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 15:53</td>
+                    <td>label each player by their colour in the popup</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 14:55</td>
+                    <td>Merge branch &#x27;final-instrument&#x27; of https://github.com/TommyAvery22/audioinstrument into final-instrument</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 14:55</td>
+                    <td>call the players blue and yellow in the popup and meters</td>
+                    <td>replaced player 1 and player 2 with blue and yellow in the how to play popup and the meter captions, each highlighted in its own colour</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 08:02</td>
+                    <td>Remove header titles and add help button</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 07:49</td>
+                    <td>Merge pull request #2 from instrument-final/final-instrument</td>
+                    <td>Final instrument</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 07:49</td>
+                    <td>Merge branch &#x27;final-instrument&#x27; into final-instrument</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 07:17</td>
+                    <td>made the layout fit medium to XL screens</td>
+                    <td>keys now resize with the screen width so the whole keyboard always fits</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 06:56</td>
+                    <td>fixed the wobble not producing sound</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 06:30</td>
+                    <td>made the distortion grittier instead of just louder</td>
+                    <td>the distortion was mostly just making player 1 louder. now player 1&#x27;s sound gets boosted going into the distortion so it actually crunches, then turned back down after so the volume stays about the same. both go back to normal when player 2 lets go</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 06:23</td>
+                    <td>replace metallic variable with distortion</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 05:25</td>
+                    <td>made the background tint fade slowly</td>
+                    <td>added a transition so the background drifts between colours instead of flashing every time a note is played</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 04:42</td>
+                    <td>rewrite the intro dialog and remove the page title</td>
+                    <td>The dialog now explains the keyboard split, the note and control rows, how each player&#x27;s notes affect their partner&#x27;s sound, and what the boxes at the top show, with a suggestion for playing together. The page title is removed so the instrument starts at the top of the page, and a ? button in the top right reopens the dialog.</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 04:33</td>
+                    <td>animate the wobble dot to bounce at the real wobble speed</td>
+                    <td>wobble keyframe animation slides the dot from one end of the meter track to the other and back</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 04:05</td>
+                    <td>Save ring and wobble state when players play so the meters can show it</td>
+                    <td>Adds ringing and ringType to player 1, and wobbling and wobbleRate to player 2. startNote saves the ring type or wobble speed a player&#x27;s note sets on their partner, and endNote clears it once that player lets go of every key. The sound is unchanged; these values are for the influence meters to read.</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 03:57</td>
+                    <td>Group control keys into brightness, wave and echo with live values</td>
+                    <td>New controlGroups list and buildControlGroup function put related control keys together: darker and brighter under brightness, wave on its own, less and more echo under echo. updateDisplay writes each group&#x27;s current setting underneath, so brightness shows the filter cutoff in hz, echo shows a percentage, and wave shows the name of the current wave shape.</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 03:27</td>
+                    <td>Add ring and wobble influence meters above the keyboard</td>
+                    <td>New buildMeter function creates a meter for each player, drawn in their partner&#x27;s colour. Player 1&#x27;s &quot;ring&quot; meter shows how metallic player 2 is making their sound; player 2&#x27;s &quot;wobble&quot; meter shows how fast player 1 is making their sound wobble. The meters sit above the keyboard and start empty (pure / still) until they&#x27;re connected to the sound.</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 02:51</td>
+                    <td>main.js</td>
+                    <td>matched the trail length to each player&#x27;s echo</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 02:49</td>
+                    <td>updated styling for the keyboard</td>
+                    <td>switched to a mono font, styled the keys and separated the controls. gave each control key a symbol with its name underneath</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 02:39</td>
+                    <td>add style.css</td>
+                    <td>faded keys out slowly after they&#x27;re let go</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 02:33</td>
+                    <td>removed mp3 file</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 02:31</td>
+                    <td>removed subtitle</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 02:12</td>
+                    <td>Merge branch &#x27;final-instrument&#x27; of https://github.com/TommyAvery22/audioinstrument into final-instrument</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 02:10</td>
+                    <td>Removed subheading</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 00:11</td>
+                    <td>create commit history</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>27 Oct 2026, 00:11</td>
+                    <td>create commit history</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 08:43</td>
+                    <td>fixed bug that stopped the cross-effects from working</td>
+                    <td>moved the cross-mod lists out of the forEach so startNote can see them</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 08:43</td>
+                    <td>fixed bug that stopped the cross-effects from working</td>
+                    <td>moved the cross-mod lists out of the forEach so startNote can see them</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 08:36</td>
+                    <td>Player 1&#x27;s notes make player 2&#x27;s wobble</td>
+                    <td>made player 1&#x27;s notes wobble player 2&#x27;s filter</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 08:36</td>
+                    <td>Player 1&#x27;s notes make player 2&#x27;s wobble</td>
+                    <td>made player 1&#x27;s notes wobble player 2&#x27;s filter</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 08:02</td>
+                    <td>made player 2 notes make player 1&#x27;s sound different</td>
+                    <td>made player 2&#x27;s notes change player 1&#x27;s frequency modulation</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 08:02</td>
+                    <td>made player 2 notes make player 1&#x27;s sound different</td>
+                    <td>made player 2&#x27;s notes change player 1&#x27;s frequency modulation</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 07:50</td>
+                    <td>made player 1 an fm synth</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 07:50</td>
+                    <td>made player 1 an fm synth</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 07:43</td>
+                    <td>started conflict prototype from the keyboard split display</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 07:43</td>
+                    <td>started conflict prototype from the keyboard split display</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:45</td>
+                    <td>Update the status as players play</td>
+                    <td>showed each player&#x27;s notes and sound settings</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:45</td>
+                    <td>Update the status as players play</td>
+                    <td>showed each player&#x27;s notes and sound settings</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:41</td>
+                    <td>show each player&#x27;s status on screen</td>
+                    <td>added a coloured section for each player. changed player 1&#x27;s colour</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:41</td>
+                    <td>show each player&#x27;s status on screen</td>
+                    <td>added a coloured section for each player. changed player 1&#x27;s colour</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:27</td>
+                    <td>make bottom row keys change the sound characteristics</td>
+                    <td>made the bottom row change filter, wave and echo</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:27</td>
+                    <td>make bottom row keys change the sound characteristics</td>
+                    <td>made the bottom row change filter, wave and echo</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:23</td>
+                    <td>added filter, echo, and shared reverb</td>
+                    <td>added a filter and echo per player and a shared reverb</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:23</td>
+                    <td>added filter, echo, and shared reverb</td>
+                    <td>added a filter and echo per player and a shared reverb</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:17</td>
+                    <td>added a synth for each player</td>
+                    <td>gave each player a synth and played notes from the keyboard</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:17</td>
+                    <td>added a synth for each player</td>
+                    <td>gave each player a synth and played notes from the keyboard</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:11</td>
+                    <td>starts the audio when the dialog closes</td>
+                    <td>started tone when the intro dialog closes</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:11</td>
+                    <td>starts the audio when the dialog closes</td>
+                    <td>started tone when the intro dialog closes</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:05</td>
+                    <td>track which keys each player is holding</td>
+                    <td>tracked which note keys each player is holding</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:05</td>
+                    <td>track which keys each player is holding</td>
+                    <td>tracked which note keys each player is holding</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:00</td>
+                    <td>respond to key inputs</td>
+                    <td>logged which player pressed each key</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 05:00</td>
+                    <td>respond to key inputs</td>
+                    <td>logged which player pressed each key</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:56</td>
+                    <td>fixed missing brackets</td>
+                    <td>fixed missing brackets between player 1 and 2</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:56</td>
+                    <td>fixed missing brackets</td>
+                    <td>fixed missing brackets between player 1 and 2</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:52</td>
+                    <td>Turned key codes into readable labels</td>
+                    <td>added keyLabel to show keys as they&#x27;re printed</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:52</td>
+                    <td>Turned key codes into readable labels</td>
+                    <td>added keyLabel to show keys as they&#x27;re printed</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:49</td>
+                    <td>added findKey function</td>
+                    <td>added findKey to look up which player owns a key</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:49</td>
+                    <td>added findKey function</td>
+                    <td>added findKey to look up which player owns a key</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:36</td>
+                    <td>added player 2&#x27;s keys</td>
+                    <td>added player 2 on the right side, who will play octave higher</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:36</td>
+                    <td>added player 2&#x27;s keys</td>
+                    <td>added player 2 on the right side, who will play octave higher</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:34</td>
+                    <td>added player 1&#x27;s note and control keys</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:34</td>
+                    <td>added player 1&#x27;s note and control keys</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:32</td>
+                    <td>altered main.js</td>
+                    <td>removed class test code, kept the intro dialog</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>06 Oct 2026, 04:32</td>
+                    <td>altered main.js</td>
+                    <td>removed class test code, kept the intro dialog</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 23:27</td>
+                    <td>assigned colours to each player</td>
+                    <td>Linked each player (player 1 &amp; 2) to their respective colours. Also updated fonts</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 23:27</td>
+                    <td>assigned colours to each player</td>
+                    <td>Linked each player (player 1 &amp; 2) to their respective colours. Also updated fonts</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 23:13</td>
+                    <td>Added player colours and updated colours in root</td>
+                    <td>Ensured that each player is represented by a distinct colour</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 23:13</td>
+                    <td>Added player colours and updated colours in root</td>
+                    <td>Ensured that each player is represented by a distinct colour</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 22:17</td>
+                    <td>pinned tone version and allowed zooming</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 22:17</td>
+                    <td>pinned tone version and allowed zooming</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 22:17</td>
+                    <td>replaced test controls with an empty stage for the display</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 22:17</td>
+                    <td>replaced test controls with an empty stage for the display</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 22:05</td>
+                    <td>Updated intro dialogue message</td>
+                    <td>Changed the message to quickly explain the synth and its mapping</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 20:47</td>
+                    <td>fixed timezone</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 20:43</td>
+                    <td>Fixed bug - incorrect element id</td>
+                    <td>oscilator wasn&#x27;t working because it wasn&#x27;t calling the correct element</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 20:38</td>
+                    <td>Fixed bugs - test button &amp; toneInit</td>
+                    <td>Corrected case sensitive inputs and incorrect element id&#x27;s</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 20:19</td>
+                    <td>added timezone</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>05 Oct 2026, 14:41</td>
+                    <td>Added audio play/pause</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>04 Oct 2026, 23:58</td>
+                    <td>Put buttons and audio into single main tag</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>04 Oct 2026, 23:48</td>
+                    <td>Altered the spacing between lines</td>
+                    <td></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>15 Sep 2026, 23:46</td>
+                    <td>added random and temporal</td>
+                    <td>implemented an audio track player and added in our random track location button</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>25 Aug 2026, 01:28</td>
+                    <td>css and js edge case</td>
+                    <td>added visual feedback to note playing, and handled edge cases for key press</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>25 Aug 2026, 01:19</td>
+                    <td>added event listeners for second key</td>
+                    <td>separated the start and end of playing the note as well as mouseleave</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>16 Aug 2026, 19:13</td>
+                    <td>added our design system css</td>
+                    <td>we set up some variables for colour and the border, and applied style to our dialog vox</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>16 Aug 2026, 19:04</td>
+                    <td>added audio init</td>
+                    <td>added an event listener on dialog close to start the audio system</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>16 Aug 2026, 18:58</td>
+                    <td>added intro dialog</td>
+                    <td>added dialog element and a button that closes it</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>TommyAvery22</td>
+                    <td>29 Jul 2026, 15:15</td>
+                    <td>init commit</td>
+                    <td>added initial files and working &quot;test sound&quot; button</td>
+
+                  </tr>
+
+                </tbody>
+
+            </table>
+        </details>
         </main>
 
         <!-- this is an empty element which helps with spacing -->

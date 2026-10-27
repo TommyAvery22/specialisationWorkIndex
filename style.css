@@ -200,3 +200,63 @@ figcaption {
     font-size: 0.85rem;
     opacity: 0.7;
 }
+
+/*commit log at the bottom of the assignment 3 page, folded into a dropdown*/
+.commit-log {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/*the dropdown's title is sized like the other section headings*/
+.commit-log summary {
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-block: 0.5rem;
+}
+
+.commit-log summary:hover {
+    text-decoration: underline;
+}
+
+.commit-log[open] summary {
+    margin-bottom: 1rem;
+}
+
+.commit-log table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+.commit-log th,
+.commit-log td {
+    border: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--colour-1) 20%, transparent);
+    padding: 0.5rem 0.75rem;
+    vertical-align: top;
+}
+
+/*the header row uses the link colour so it stands out from the commits*/
+.commit-log th {
+    background-color: var(--colour-3);
+    color: var(--colour-2);
+}
+
+/*every second row is slightly lighter so long rows are easier to follow*/
+.commit-log tbody tr:nth-child(even) {
+    background-color: color-mix(in srgb, var(--colour-1) 6%, transparent);
+}
+
+/*number and date stay on one line*/
+.commit-log td:nth-child(1),
+.commit-log td:nth-child(2) {
+    white-space: nowrap;
+    opacity: 0.7;
+}
+
+.commit-log td:nth-child(3) {
+    font-weight: 700;
+}
+
